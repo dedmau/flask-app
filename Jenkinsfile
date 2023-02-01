@@ -11,6 +11,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
+                sh "sleep 3"
                 sh "curl localhost:8090"
             }
         }
